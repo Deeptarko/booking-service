@@ -33,7 +33,7 @@ public class BookingService {
 
         // 1️⃣ Lock inventory rows
         List<Inventory> inventoryList =
-                inventoryRepository.findAndLockInventory(
+                inventoryRepository.findByHotelIdAndRoomTypeIdAndDateBetween(
                         hotelId, roomTypeId, startDate, endDate
                 );
 

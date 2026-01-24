@@ -25,6 +25,8 @@ public class Inventory {
     private Long roomTypeId;
     private LocalDate date;
     private int availableRooms;
+    @Version
+    private Long version;
 
 }
 
